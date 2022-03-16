@@ -42,10 +42,7 @@ detection:
         - '${${lower:j}ndi:'
         - '${${upper:j}ndi:'
         - '${${::-j}${::-n}${::-d}${::-i}:'
-    filter:
-        - 'w.nessus.org/nessus'
-        - '/nessus}'
-    condition: keywords and not filter
+    condition: keywords
 falsepositives:
     - Vulnerability scanning
 level: high

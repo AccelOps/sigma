@@ -24,11 +24,10 @@ detection:
             - DisableBehaviorMonitoring
             - DisableScriptScanning
             - DisableBlockAtFirstSeen
-            - DisableIOAVProtection
     condition: selection
 falsepositives:
     - Legitimate PowerShell scripts
-level: high
+level: medium
 tags:
     - attack.defense_evasion
     - attack.t1562.001

@@ -66,15 +66,5 @@ logsources:
     product: windows
     service: smbclient-security
     conditions:
-      EventLog: 'Microsoft-Windows-SmbClient/Security'
-  windows-firewall-advanced-security:
-    product: windows
-    service: firewall-as
-    conditions:
-      EventLog: 'Microsoft-Windows-Windows Firewall With Advanced Security/Firewall'        
-  windows-bits-client:
-    product: windows
-    service: bits-client
-    conditions:
-      EventLog: 'Microsoft-Windows-Bits-Client/Operational' 
+      log_name: 'Microsoft-Windows-SmbClient/Security'
 defaultindex: logstash-*
